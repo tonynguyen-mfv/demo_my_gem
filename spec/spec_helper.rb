@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-require "demo_my_gem"
+# require "demo_my_gem"
+Dir["./lib/*.rb"].each { |f| require f }
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
